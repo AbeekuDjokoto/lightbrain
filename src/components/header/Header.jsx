@@ -1,7 +1,17 @@
+import React from "react";
 import { heroImage } from "../../assets";
 import BaseSearchInput from "../shared/BaseSearchInput";
+import { ROUTES } from "../../utils/routes-contants";
+import { useNavigate } from "react-router";
 
 const Header = () => {
+  const [searchQuery, setSearchQuery] = React.useState();
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    navigate(`${ROUTES.SEARCH_RESULTS}?query=${searchQuery}`);
+  };
+
   return (
     <header>
       <div className="mx-auto flex items-center justify-between w-90 max-w-custom">
@@ -12,7 +22,11 @@ const Header = () => {
               Find a home in a neighborhood you love.
             </h1>
             <div className="">
-              <BaseSearchInput placeholder="Search for a neighborhood near you" />
+              <BaseSearchInput
+                placeholder="Search for a neighborhood near you"
+                onChange={(e) => setSearchQuery(e.target.value)}
+                onSearch={handleSearch}
+              />
             </div>
           </div>
         </div>

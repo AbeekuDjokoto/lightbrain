@@ -2,7 +2,9 @@ import PropTypes from "prop-types";
 import { HeartIcon } from "../../assets";
 
 const DetailedListingCard = (props) => {
+  console.log("props", props);
   const { image, title, location, price, amenities } = props.data;
+
   return (
     <div className="border border-[#d1d5db] rounded-lg max-w-[736px] w-full flex">
       <div className="relative">

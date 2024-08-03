@@ -7,7 +7,12 @@ const DetailedListingCard = (props) => {
   return (
     <div className="border border-[#d1d5db] rounded-lg max-w-[736px] w-full flex">
       <div className="relative">
-        <img src={image} alt="" className="h-full max-w-[317px] w-full" />
+        <img
+          src={image}
+          alt=""
+          className="h-full max-w-[317px] w-full"
+          loading="lazy"
+        />
         <div className="absolute right-3 top-3 rounded-full w-[35px] h-[35px] bg-white border border-[#d1d5db] text-[#76777FFF] font-bold flex items-center justify-center">
           <HeartIcon />
         </div>

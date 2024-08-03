@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <div className="border border-[#d1d5db] rounded-lg w-[244px]">
       <div className="relative">
-        <img src={image} alt="" />
+        <img src={image} alt="" loading="lazy" />
         <div className="absolute right-3 top-3 rounded-full w-[35px] h-[35px] bg-white border border-[#d1d5db] text-[#76777FFF] font-bold flex items-center justify-center">
           <HeartIcon />
         </div>

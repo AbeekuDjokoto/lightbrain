@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import { HeartIcon } from "../../assets";
 
 const DetailedListingCard = (props) => {
-  console.log("props", props);
   const { image, title, location, price, amenities } = props.data;
 
   return (

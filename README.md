@@ -2,9 +2,6 @@ PROJECT OVERVIEW
 
 This project is a React-based web application for displaying real estate listings with detailed information about each property. The application utilizes Tailwind CSS for styling and incorporates various features such as responsive design and dynamic data rendering.
 
-Features
-Responsive design
-Detailed listing cards with images, amenities, and prices
 Tailwind CSS for styling
 PropTypes for type checking
 Prerequisites
@@ -15,34 +12,30 @@ npm (v6.x or higher) or yarn (v1.x or higher)
 Getting Started
 Follow these steps to set up and run the project locally:
 
-Clone the Repository
+#Clone the Repository
 
-sh
-Copy code
 git clone https://github.com/your-username/real-estate-listing.git
 cd real-estate-listing
 Install Dependencies
 
-Using npm:
+#Installation of dependencies
 
-sh
-Copy code
-npm install
-Or using yarn:
+Using yarn:
 
-sh
-Copy code
 yarn install
-Start the Development Server
+
+using npm:
+
+npm install
+
+#Start the Development Server
 
 Using npm:
 
-sh
-Copy code
-npm start
+npm run dev:start
 Or using yarn:
 
-sh
-Copy code
-yarn start
+Using yarn:
+
+yarn dev:start
 The development server should now be running at http://localhost:5173/.
